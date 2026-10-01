@@ -1,0 +1,40 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_LEFT_RIGHT()
+skinparam linetype ortho
+title Обмен событиями
+
+System_Boundary(mp, "Marketplace") {
+    Container(user_svc, "User Service", "Go", "Публикует изменения профиля")
+    Container(catalog_svc, "Catalog Service", "Go", "Публикует изменения товаров")
+    Container(order_pub, "Order Service", "Go", "Публикует создание и статус заказа")
+    Container(payment_pub, "Payment Service", "Go", "Публикует результат платежа")
+
+    Container(broker, "Event Broker", "Kafka", "Доставка доменных событий")
+
+    Container(feed_svc, "Feed Service", "Go", "Обновляет интересы и проекцию товаров")
+    Container(notification_svc, "Notification Service", "Go", "Обновляет контакты и отправляет уведомления")
+    Container(payment_sub, "Payment Service", "Go", "Создает платеж по новому заказу")
+    Container(order_sub, "Order Service", "Go", "Меняет статус по результату платежа")
+}
+
+Rel(user_svc, broker, "user.profile.changed", "async")
+Rel(catalog_svc, broker, "product.changed", "async")
+Rel(order_pub, broker, "order.created, order.status.changed", "async")
+Rel(payment_pub, broker, "payment.succeeded, payment.failed", "async")
+
+Rel(broker, feed_svc, "user.profile.changed, product.changed, payment.succeeded", "async")
+Rel(broker, notification_svc, "user.profile.changed, order.status.changed, payment.succeeded, payment.failed", "async")
+Rel(broker, payment_sub, "order.created", "async")
+Rel(broker, order_sub, "payment.succeeded, payment.failed", "async")
+
+Lay_D(user_svc, catalog_svc)
+Lay_D(catalog_svc, order_pub)
+Lay_D(order_pub, payment_pub)
+Lay_D(feed_svc, notification_svc)
+Lay_D(notification_svc, payment_sub)
+Lay_D(payment_sub, order_sub)
+
+SHOW_LEGEND()
+@enduml

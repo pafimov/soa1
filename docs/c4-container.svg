@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2130" height="1990" viewBox="0 0 2130 1990" role="img" aria-labelledby="title">
+  <title id="title">HTTP и хранилища</title>
+  <defs>
+    <marker id="sync" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+    </marker>
+    <marker id="data" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2874A6" />
+    </marker>
+    <marker id="async" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7250B5" />
+    </marker>
+  </defs>
+  <rect width="2130" height="1990" fill="white" />
+  <text x="1065.0" y="52" fill="#1E293B" font-size="30" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">HTTP и хранилища</text>
+  <rect x="40" y="300" width="1540" height="1660" rx="18" fill="none" stroke="#94A3B8" stroke-width="2" />
+  <text x="64" y="336" fill="#1E293B" font-size="22" font-family="Arial, sans-serif" text-anchor="start" font-weight="bold">Marketplace</text>
+  <rect x="65" y="130" width="260" height="130" rx="12" fill="#08427B" stroke="#08427B" stroke-width="2" />
+  <text x="195.0" y="161.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Покупатель</text>
+  <text x="195.0" y="189.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Person]</text>
+  <text x="195.0" y="219.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Смотрит ленту и оформляет</text>
+  <text x="195.0" y="242.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">заказы</text>
+  <rect x="380" y="130" width="260" height="130" rx="12" fill="#08427B" stroke="#08427B" stroke-width="2" />
+  <text x="510.0" y="161.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Продавец</text>
+  <text x="510.0" y="189.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Person]</text>
+  <text x="510.0" y="219.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Управляет своими товарами</text>
+  <rect x="70" y="390" width="240" height="1480" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="190.0" y="1096.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">API Gateway</text>
+  <text x="190.0" y="1124.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: HTTP/JSON]</text>
+  <text x="190.0" y="1154.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Единая точка входа,</text>
+  <text x="190.0" y="1177.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">маршрутизация и проверка</text>
+  <text x="190.0" y="1200.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">токена</text>
+  <rect x="650" y="390" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="421.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">User Service</text>
+  <text x="820.0" y="449.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="479.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Пользователи, роли покупателя и</text>
+  <text x="820.0" y="502.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">продавца</text>
+  <rect x="1240" y="390" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="390" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 390 V 520 A 140.0 10 0 0 0 1520 520 V 390" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="421.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">User DB</text>
+  <text x="1380.0" y="449.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="479.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Аккаунты, роли, профиль и</text>
+  <text x="1380.0" y="502.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">контакты</text>
+  <rect x="650" y="610" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="641.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Catalog Service</text>
+  <text x="820.0" y="669.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="699.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Карточки товаров, категории, цены и</text>
+  <text x="820.0" y="722.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">остатки</text>
+  <rect x="1240" y="610" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="610" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 610 V 740 A 140.0 10 0 0 0 1520 740 V 610" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="641.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Catalog DB</text>
+  <text x="1380.0" y="669.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="699.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Товары и предложения</text>
+  <text x="1380.0" y="722.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">продавцов</text>
+  <rect x="650" y="930" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="961.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Order Service</text>
+  <text x="820.0" y="989.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="1019.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Создание заказа и его жизненный</text>
+  <text x="820.0" y="1042.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">цикл</text>
+  <rect x="1240" y="930" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="930" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 930 V 1060 A 140.0 10 0 0 0 1520 1060 V 930" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="961.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Order DB</text>
+  <text x="1380.0" y="989.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="1019.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Заказы, позиции, статусы и</text>
+  <text x="1380.0" y="1042.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">снимок цены</text>
+  <rect x="650" y="1150" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="1181.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Feed Service</text>
+  <text x="820.0" y="1209.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="1239.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Персональная лента и ранжирование</text>
+  <rect x="1240" y="1150" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="1150" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 1150 V 1280 A 140.0 10 0 0 0 1520 1280 V 1150" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="1181.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Feed DB</text>
+  <text x="1380.0" y="1209.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="1239.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Интересы, просмотры и</text>
+  <text x="1380.0" y="1262.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">проекция товаров</text>
+  <rect x="650" y="1370" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="1401.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Payment Service</text>
+  <text x="820.0" y="1429.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="1459.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Расчет и учет платежей</text>
+  <rect x="1240" y="1370" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="1370" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 1370 V 1500 A 140.0 10 0 0 0 1520 1500 V 1370" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="1401.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Payment DB</text>
+  <text x="1380.0" y="1429.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="1459.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Платежи и идентификаторы</text>
+  <text x="1380.0" y="1482.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">провайдера</text>
+  <rect x="650" y="1740" width="340" height="130" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="820.0" y="1771.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Notification Service</text>
+  <text x="820.0" y="1799.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go, HTTP]</text>
+  <text x="820.0" y="1829.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Отправка уведомлений и повторы</text>
+  <rect x="1240" y="1740" width="280" height="130" rx="0" fill="#DCEBF7" stroke="#DCEBF7" stroke-width="2" />
+  <ellipse cx="1380.0" cy="1740" rx="140.0" ry="10" fill="#DCEBF7" stroke="#2874A6" stroke-width="2" />
+  <path d="M 1240 1740 V 1870 A 140.0 10 0 0 0 1520 1870 V 1740" fill="none" stroke="#2874A6" stroke-width="2" />
+  <text x="1380.0" y="1771.0" fill="#1E3A5F" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Notification DB</text>
+  <text x="1380.0" y="1799.0" fill="#1E3A5F" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: PostgreSQL]</text>
+  <text x="1380.0" y="1829.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Шаблоны, настройки и попытки</text>
+  <text x="1380.0" y="1852.0" fill="#1E3A5F" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">отправки</text>
+  <rect x="1750" y="1360" width="340" height="150" rx="12" fill="#64748B" stroke="#64748B" stroke-width="2" />
+  <text x="1920.0" y="1401.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Платежный провайдер</text>
+  <text x="1920.0" y="1429.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[External System]</text>
+  <text x="1920.0" y="1459.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Проводит платежи, присылает webhook</text>
+  <rect x="1750" y="1730" width="340" height="150" rx="12" fill="#64748B" stroke="#64748B" stroke-width="2" />
+  <text x="1920.0" y="1771.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Провайдер уведомлений</text>
+  <text x="1920.0" y="1799.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[External System]</text>
+  <text x="1920.0" y="1829.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Email, SMS, push</text>
+  <polyline points="195,260 195,390" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="115" y="290" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTPS/JSON</text>
+  <polyline points="510,260 510,360 265,360 265,390" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="570" y="315" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTPS/JSON</text>
+  <polyline points="310,455 650,455" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="385" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Аккаунт и профиль</text>
+  <text x="480" y="409" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="310,675 650,675" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="605" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Каталог и управление товарами</text>
+  <text x="480" y="629" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="310,1215 650,1215" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="1145" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Лента и фиксация просмотров</text>
+  <text x="480" y="1169" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="310,995 650,995" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="925" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Оформление и просмотр заказов</text>
+  <text x="480" y="949" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="310,1435 650,1435" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="1365" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Статус и данные платежа</text>
+  <text x="480" y="1389" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="310,1805 650,1805" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="480" y="1735" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Настройки уведомлений</text>
+  <text x="480" y="1759" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="990,455 1240,455" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="437" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="990,675 1240,675" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="657" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="990,1215 1240,1215" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="1197" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="990,995 1240,995" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="977" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="990,1435 1240,1435" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="1417" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="990,1805 1240,1805" fill="none" stroke="#2874A6" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#data)" />
+  <text x="1115" y="1787" fill="#2874A6" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Читает и пишет</text>
+  <polyline points="820,930 820,740" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="1050" y="810" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Проверяет товар,</text>
+  <text x="1050" y="834" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">цену и остаток</text>
+  <text x="1050" y="858" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">HTTP, sync</text>
+  <polyline points="935,1370 935,1350 1670,1350 1670,1405 1750,1405" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="1320" y="1330" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Создает платеж · HTTPS, sync</text>
+  <polyline points="1750,1465 1650,1465 1650,1560 940,1560 940,1500" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="1320" y="1590" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Передает статус · Webhook HTTPS</text>
+  <polyline points="935,1740 935,1695 1670,1695 1670,1785 1750,1785" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#sync)" />
+  <text x="1320" y="1665" fill="#334155" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Отправляет сообщение · HTTPS, sync</text>
+</svg>

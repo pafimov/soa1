@@ -1,0 +1,66 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_TOP_DOWN()
+skinparam linetype ortho
+title HTTP и хранилища
+
+Person(buyer, "Покупатель", "Смотрит ленту и оформляет заказы")
+Person(seller, "Продавец", "Управляет своими товарами")
+
+System_Ext(pay_provider, "Платежный провайдер", "Проводит платежи, присылает webhook")
+System_Ext(msg_provider, "Провайдер уведомлений", "Email, SMS, push")
+
+System_Boundary(mp, "Marketplace") {
+    Container(gateway, "API Gateway", "HTTP/JSON", "Единая точка входа, маршрутизация и проверка токена")
+
+    Container(user_svc, "User Service", "Go, HTTP", "Пользователи, роли покупателя и продавца")
+    ContainerDb(user_db, "User DB", "PostgreSQL", "Аккаунты, роли, профиль и контакты")
+
+    Container(catalog_svc, "Catalog Service", "Go, HTTP", "Карточки товаров, категории, цены и остатки")
+    ContainerDb(catalog_db, "Catalog DB", "PostgreSQL", "Товары и предложения продавцов")
+
+    Container(feed_svc, "Feed Service", "Go, HTTP", "Персональная лента и ранжирование")
+    ContainerDb(feed_db, "Feed DB", "PostgreSQL", "Интересы, просмотры и проекция товаров")
+
+    Container(order_svc, "Order Service", "Go, HTTP", "Создание заказа и его жизненный цикл")
+    ContainerDb(order_db, "Order DB", "PostgreSQL", "Заказы, позиции, статусы и снимок цены")
+
+    Container(payment_svc, "Payment Service", "Go, HTTP", "Расчет и учет платежей")
+    ContainerDb(payment_db, "Payment DB", "PostgreSQL", "Платежи и идентификаторы провайдера")
+
+    Container(notification_svc, "Notification Service", "Go, HTTP", "Отправка уведомлений и повторы")
+    ContainerDb(notification_db, "Notification DB", "PostgreSQL", "Шаблоны, настройки и попытки отправки")
+
+}
+
+Rel(buyer, gateway, "Использует", "HTTPS/JSON")
+Rel(seller, gateway, "Использует", "HTTPS/JSON")
+
+Rel(gateway, user_svc, "Аккаунт и профиль", "HTTP, sync")
+Rel(gateway, catalog_svc, "Каталог и управление товарами", "HTTP, sync")
+Rel(gateway, feed_svc, "Лента и фиксация просмотров", "HTTP, sync")
+Rel(gateway, order_svc, "Оформление и просмотр заказов", "HTTP, sync")
+Rel(gateway, payment_svc, "Статус и данные платежа", "HTTP, sync")
+Rel(gateway, notification_svc, "Настройки уведомлений", "HTTP, sync")
+
+Rel(user_svc, user_db, "Читает и пишет")
+Rel(catalog_svc, catalog_db, "Читает и пишет")
+Rel(feed_svc, feed_db, "Читает и пишет")
+Rel(order_svc, order_db, "Читает и пишет")
+Rel(payment_svc, payment_db, "Читает и пишет")
+Rel(notification_svc, notification_db, "Читает и пишет")
+
+Rel(order_svc, catalog_svc, "Проверяет товар, цену и остаток", "HTTP, sync")
+Rel(payment_svc, pay_provider, "Создает платеж", "HTTPS, sync")
+Rel(pay_provider, payment_svc, "Передает статус", "Webhook HTTPS")
+Rel(notification_svc, msg_provider, "Отправляет сообщение", "HTTPS, sync")
+
+Lay_D(user_svc, catalog_svc)
+Lay_D(catalog_svc, order_svc)
+Lay_D(order_svc, feed_svc)
+Lay_D(feed_svc, payment_svc)
+Lay_D(payment_svc, notification_svc)
+
+SHOW_LEGEND()
+@enduml

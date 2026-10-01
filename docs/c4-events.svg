@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1870" height="1355" viewBox="0 0 1870 1355" role="img" aria-labelledby="title">
+  <title id="title">Обмен событиями</title>
+  <defs>
+    <marker id="sync" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+    </marker>
+    <marker id="data" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2874A6" />
+    </marker>
+    <marker id="async" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7250B5" />
+    </marker>
+  </defs>
+  <rect width="1870" height="1355" fill="white" />
+  <text x="935.0" y="52" fill="#1E293B" font-size="30" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Обмен событиями</text>
+  <rect x="25" y="135" width="1820" height="1190" rx="18" fill="none" stroke="#94A3B8" stroke-width="2" />
+  <text x="49" y="171" fill="#1E293B" font-size="22" font-family="Arial, sans-serif" text-anchor="start" font-weight="bold">Marketplace</text>
+  <rect x="50" y="310" width="320" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="210.0" y="351.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">User Service</text>
+  <text x="210.0" y="379.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="210.0" y="409.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Публикует изменения профиля</text>
+  <rect x="50" y="560" width="320" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="210.0" y="601.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Catalog Service</text>
+  <text x="210.0" y="629.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="210.0" y="659.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Публикует изменения товаров</text>
+  <rect x="50" y="810" width="320" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="210.0" y="851.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Order Service</text>
+  <text x="210.0" y="879.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="210.0" y="909.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Публикует создание и статус</text>
+  <text x="210.0" y="932.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">заказа</text>
+  <rect x="50" y="1060" width="320" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="210.0" y="1101.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Payment Service</text>
+  <text x="210.0" y="1129.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="210.0" y="1159.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Публикует результат платежа</text>
+  <rect x="1490" y="310" width="340" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="1660.0" y="351.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Feed Service</text>
+  <text x="1660.0" y="379.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="1660.0" y="409.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Обновляет интересы и проекцию</text>
+  <text x="1660.0" y="432.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">товаров</text>
+  <rect x="1490" y="560" width="340" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="1660.0" y="601.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Notification Service</text>
+  <text x="1660.0" y="629.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="1660.0" y="659.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Обновляет контакты и отправляет</text>
+  <text x="1660.0" y="682.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">уведомления</text>
+  <rect x="1490" y="810" width="340" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="1660.0" y="851.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Payment Service</text>
+  <text x="1660.0" y="879.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="1660.0" y="909.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Создает платеж по новому заказу</text>
+  <rect x="1490" y="1060" width="340" height="150" rx="12" fill="#236FB2" stroke="#236FB2" stroke-width="2" />
+  <text x="1660.0" y="1101.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Order Service</text>
+  <text x="1660.0" y="1129.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Go]</text>
+  <text x="1660.0" y="1159.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Меняет статус по результату платежа</text>
+  <rect x="790" y="310" width="280" height="900" rx="12" fill="#7250B5" stroke="#7250B5" stroke-width="2" />
+  <text x="930.0" y="726.0" fill="white" font-size="23" font-family="Arial, sans-serif" text-anchor="middle" font-weight="bold">Event Broker</text>
+  <text x="930.0" y="754.0" fill="white" font-size="16" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">[Container: Kafka]</text>
+  <text x="930.0" y="784.0" fill="white" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">Доставка доменных событий</text>
+  <polyline points="370,385 790,385" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="580" y="363" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">user.profile.changed</text>
+  <polyline points="370,635 790,635" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="580" y="613" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">product.changed</text>
+  <polyline points="370,885 790,885" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="580" y="839" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">order.created</text>
+  <text x="580" y="863" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">order.status.changed</text>
+  <polyline points="370,1135 790,1135" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="580" y="1089" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.succeeded</text>
+  <text x="580" y="1113" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.failed</text>
+  <polyline points="1070,385 1490,385" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="1280" y="315" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">user.profile.changed</text>
+  <text x="1280" y="339" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">product.changed</text>
+  <text x="1280" y="363" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.succeeded</text>
+  <polyline points="1070,635 1490,635" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="1280" y="541" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">user.profile.changed</text>
+  <text x="1280" y="565" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">order.status.changed</text>
+  <text x="1280" y="589" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.succeeded</text>
+  <text x="1280" y="613" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.failed</text>
+  <polyline points="1070,885 1490,885" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="1280" y="863" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">order.created</text>
+  <polyline points="1070,1135 1490,1135" fill="none" stroke="#7250B5" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#async)" stroke-dasharray="9 6" />
+  <text x="1280" y="1089" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.succeeded</text>
+  <text x="1280" y="1113" fill="#7250B5" font-size="17" font-family="Arial, sans-serif" text-anchor="middle" font-weight="normal">payment.failed</text>
+</svg>
